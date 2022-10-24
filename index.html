@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<style>*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}body{background:#1d0035;min-height:100vh;overflow:hidden}section{position:absolute;width:100%;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-transform:perspective(700px);transform:perspective(700px)}.box{position:absolute;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;top:125px}.box .cube{position:relative;width:200px;height:200px;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-animation:animateCube 20s linear infinite;animation:animateCube 20s linear infinite}@-webkit-keyframes animateCube{0%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}100%{-webkit-transform:rotateY(360deg);transform:rotateY(360deg)}}@keyframes animateCube{0%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}100%{-webkit-transform:rotateY(360deg);transform:rotateY(360deg)}}.box .cube div{position:absolute;top:0;left:0;width:100%;height:100%;-webkit-transform-style:preserve-3d;transform-style:preserve-3d}.box .cube div span{position:absolute;top:0;left:0;width:100%;height:100%;background:-o-radial-gradient(#fb6200, #fb6200, #c3300f);background:radial-gradient(#fb6200, #fb6200, #c3300f);-webkit-transform:rotateY(calc(90deg * var(--i))) translateZ(100px);transform:rotateY(calc(90deg * var(--i))) translateZ(100px)}.box .cube .top{position:absolute;top:0;left:0;width:200px;height:200px;background:#b22708;-webkit-transform:rotateX(90deg) translateZ(100px);transform:rotateX(90deg) translateZ(100px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.box .cube .top::before{content:"";position:absolute;width:400px;height:400px;background:#fb6200;-webkit-filter:blur(50px);filter:blur(50px);-webkit-transform:translateZ(-400px);transform:translateZ(-400px);-webkit-box-shadow:0 0 120px rgba(251,98,0,.2),0 0 200px rgba(251,98,0,.4),0 0 300px rgba(251,98,0,.6),0 0 400px rgba(251,98,0,.8),0 0 500px #fb6200;box-shadow:0 0 120px rgba(251,98,0,.2),0 0 200px rgba(251,98,0,.4),0 0 300px rgba(251,98,0,.6),0 0 400px rgba(251,98,0,.8),0 0 500px #fb6200}</style>
+<body>
+    <section>
+
+        <div class="box">
+            <div class="cube">
+                <div class="top"></div>
+                <div>
+                    <span style="--i:0"></span>
+                    <span style="--i:1"></span>
+                    <span style="--i:2"></span>
+                    <span style="--i:3"></span>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+</html>
